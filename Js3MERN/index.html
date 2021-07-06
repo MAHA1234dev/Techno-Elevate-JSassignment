@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1"  id="div3"> <h2 id="root" class="h2tag"></h2></div>
+    <div id="div2">
+        <div class="plusdiv"> <button onclick="increment()" class="plus"><img src="./images/plus-icon.jpg" alt=""></button>> </div>
+        <div ><button onclick="reverse()" ><img src="./images/reverse-arrow.jpg" alt=""></button></div>
+        <div><button onclick="decrement()" class="minus"><img src="./images/minus.jpg" alt=""></button> </div>
+    </div>
+    <script>
+         var data=0;
+         document.getElementById('root').innerText=data;
+         function increment()
+         {
+             data=data+1;
+             document.getElementById('root').innerText=data;
+
+         }
+         function decrement()
+         {
+             data=data-1;
+             document.getElementById('root').innerText=data;
+
+         }
+         function reverse()
+         {
+             data =0;
+             document.getElementById('root').innerText=data;
+         }
+
+
+
+       
+
+
+
+
+    </script>
+</body>
+</html>
